@@ -1,0 +1,45 @@
+header{
+    .change-mode{
+        .dark-mode, .light-mode{
+            border: 1px solid #ccc;
+            padding: 5px 10px;
+            cursor:pointer
+        }
+    }
+}
+#my-modal{
+    position:fixed;
+    width:100%;
+    margin: auto;
+    background: rgba(85, 174, 34, 0.588);
+    top:0%;
+    left:0%;
+    height:100%;
+    z-index:5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity:0;
+    visibility: hidden;
+    transition: 0.3s ease-in-out;
+&.modal-active{
+    opacity: 1;
+    visibility: visible;
+}
+.modal-middle{
+    background: #fff;
+    padding: 2rem 15px;
+    position:relative;
+    font-size: 1.2rem;
+    
+}
+
+.close-modal{
+    position:absolute;
+    right:5px;
+    top:5px;
+    padding: 5px 10px;
+    background: #fff;
+    cursor:pointer;
+}
+}
